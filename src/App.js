@@ -5,7 +5,7 @@ function App() {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/') // Replace with your Render backend URL later
+    fetch('https://be-ci-cd.onrender.com/') // Replace with your Render backend URL later
       .then(res => res.text())
       .then(data => setMessage(data))
       .catch(err => console.error("Error fetching backend:", err));
